@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رسم نمودار معادلات درجه ۱ تا ۳</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>رسم نمودار معادلات درجه ۱ تا ۳</h1>
+        
+        <div class="controls">
+            <label>درجه معادله:</label>
+            <select id="degree">
+                <option value="1">درجه ۱ (خط)</option>
+                <option value="2">درجه ۲ (سهمی)</option>
+                <option value="3">درجه ۳ (مکعبی)</option>
+            </select>
+            
+            <div id="coefficients">
+                <!-- فیلدهای ضرایب به صورت داینامیک اضافه می‌شوند -->
+            </div>
+            
+            <button id="plotBtn">رسم نمودار</button>
+        </div>
+        
+        <canvas id="graphCanvas" width="800" height="500"></canvas>
+        
+        <div id="importantPoints">
+            <h2>نقاط مهم</h2>
+            <ul id="pointsList"></ul>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
