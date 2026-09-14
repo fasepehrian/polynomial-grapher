@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    font-family: Tahoma, sans-serif;
+}
+
+body {
+    background: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    max-width: 900px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#coefficients {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#coefficients input {
+    width: 80px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+canvas {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+#importantPoints {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+#pointsList li {
+    margin-bottom: 8px;
+    font-size: 15px;
+}
